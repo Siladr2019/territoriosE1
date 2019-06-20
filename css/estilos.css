@@ -6,13 +6,16 @@ html {
 
 body {
   background-color: transparent;
-  margin-top: 15%;
+  margin-top: 3%;
   margin-left: 12%;
-  color: #fff;
+  color: rgb(209, 205, 205);
 }
 
 table {
   background-color: #fff;
+}
+p {
+  width: 600px;
 }
 
 #advanced-search-form {

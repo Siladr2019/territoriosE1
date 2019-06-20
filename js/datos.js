@@ -78,13 +78,14 @@ function observador() {
       console.log("No existe ningún usuario con esos datos");
       var contenido = document.getElementById("contenido");
       contenido.innerHTML = `
-      <p>Debes conectarte para acceder al panel de usuarios registrados</p>
+      <br>
+      <p class="alert alert-info">Debes conectarte para acceder al panel de usuarios registrados</p>
       `;
     }
   });
 }
 
-var fechaHoy = new Date().getFullYear() + "/" + (new Date().getMonth()+1) + "/" + new Date().getDate();
+// var fechaHoy = new Date().getFullYear() + "/" + (new Date().getMonth()+1) + "/" + new Date().getDate();
 
 function contenidosUsuarioRegistrado(usuario) {
   var contenido = document.getElementById("contenido");
@@ -93,7 +94,7 @@ function contenidosUsuarioRegistrado(usuario) {
       <div class="alert alert-info alert-dismissible fade show mt-3" role="alert">
         <h3 class="alert alert-info">¡Bienvenido ${usuario.email}!</h3>
         <hr>
-        <p class="mb-0">Tenemos muchos contenidos exclusivos solo para usuarios registrados</p>
+        <p class="mb-0 alert alert-info">Tenemos muchos contenidos exclusivos solo para usuarios registrados</p>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -111,7 +112,7 @@ function contenidosUsuarioRegistrado(usuario) {
         </div>
         <div class="form-inline">
         <label for="inicio" class="col-sm-3 col-form-label">Fecha inicio<sup>(*)</sup>: </label>
-          <input type="date" id="inicio" placeholder="Introduce una fecha de inicio" class="form-control my-3 col-sm-3" max="${fechaHoy}" required>
+          <input type="date" id="inicio" placeholder="Introduce una fecha de inicio" class="form-control my-3 col-sm-3" max="2019-06-20" required>
         </div>
         <div class="form-inline">
           <label for="fin" class="col-sm-3 col-form-label">Fecha fin<sup>(*)</sup>: </label>
