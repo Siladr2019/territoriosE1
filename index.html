@@ -2,84 +2,98 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Territorios</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/estilos.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="GitHub Pages - Territorio E1">
+  <meta name="author" content="Sheila Adr">
+
+  <title>Territorios E2</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
 </head>
 
-<body>
-  <header class="container mt-3">
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand">Prueba evaluable - Territorios E1</a>
-      <div id="botones" class="form-inline">
-        <label for="email2">E-mail:&nbsp;</label>
-        <input id="email2" type="email" placeholder="Introduce tu e-mail" class="form-control form-control-sm mr-sm-2">
-        <label for="password2">Password:&nbsp;</label>
-        <input id="password2" type="password" placeholder="Introduce tu password"
-          class="form-control form-control-sm mr-sm-2">
-        <button id="conectar" class="btn btn-outline-info my-2 my-sm-0 btn-sm">Conectar</button>
-        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sm ml-2" data-toggle="modal"
-          data-target="#modalRegistro">Registrar</button>
-      </div>
-      <span id="cerrarconexion"></span>
-    </nav>
+<body id="page-top">
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Territorios E2</h1>
+      <h3 class="mb-5">
+        <em>Aplicación realizada con Visual Studio Code para el uso de GitHub Pages</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Mas</a>
+    </div>
+    <div class="overlay"></div>
   </header>
 
-  <!-- Modal -->
-  <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="modalRegistroLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalRegistroLabel">Formulario de registro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <label for="email1">E-mail:&nbsp;</label>
-          <input id="email1" type="email" placeholder="Introduce tu e-mail" class="form-control">
-          <div class="mt-2"></div>
-          <label for="password1">Password:&nbsp;</label>
-          <input id="password1" type="password" placeholder="Introduce tu password" class="form-control">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button id="registrar" type="button" class="btn btn-primary">Guardar</button>
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Página de inicio a la aplicación</h2>
+          <p class="lead mb-5">En esta página se realiza o bien el registro o el inicio de sesión para poder acceder a los contenidos exclusivos para usuarios registrados.</p>
+          <img src="img/pagina_inicio.jpg" alt="Pagina de inicio">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div id="contenido">
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Página de usuarios registrados</h2>
+      <p class="lead mb-5">En esta página se accede una vez realizado el inicio de sesión y se pueden realizar cambios en los datos introducidos anteriormente o añadir datos nuevos.</p>
+      <img src="img/pagina_usuarios.jpg" alt="Pagina de usuarios registrados">
     </div>
-  </div>
+  </section>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
+  <!-- Map -->
+  <section id="contact" class="map">
+    <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.4366591754865!2d-2.4476591845405067!3d42.461000879180226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aab4401162c91%3A0xe65a34ad7fec9237!2sAdr+Infor+S+L!5e0!3m2!1ses!2ses!4v1561461158027!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <br />
+  </section>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/Siladr2019/territoriosE1/tree/gh-pages" target="blank">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Territorios E2 2019</p>
+    </div>
+  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="js/datos.js"></script>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
 </body>
 
 </html>
